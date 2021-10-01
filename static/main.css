@@ -1,0 +1,10 @@
+body {
+  color: #d3ab9e;
+  background-color: #1d3557;
+}
+
+h1,
+h2 {
+  font-family: "Noto Serif", "Open Sans";
+  text-align: center;
+}
