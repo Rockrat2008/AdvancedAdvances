@@ -31,6 +31,7 @@
         </div>
       </div>
     </header>
+
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
       <div class="container">
         <button
@@ -43,11 +44,11 @@
         </button>
         <div class="collapse navbar-collapse" id="houseOfZevhaNavbar">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
             <li class="nav-item">
-              <a class="nav-link" href="clients.html">Clients</a>
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Clients</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="join.html">Advances</a>
@@ -69,18 +70,121 @@
         </div>
       </div>
     </nav>
-    <p>
-      You've invested in the best team possible, now it is time to give them the
-      best tool possible - For your benefit, your teams benefit, and your
-      clients benefit.
-    </p>
+
+    <div class="container">
+      <h3>Add a client</h3>
+      <form>
+        <div class="form-group row">
+          <label for="firstName">First name</label>
+          <div class="col-md-10">
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="First Name"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="lastName">Last name</label>
+          <div class="col-md-10">
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="position">Position</label>
+          <div class="col-md-10">
+            <input
+              type="text"
+              id="position"
+              name="position"
+              placeholder="Position"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="busPhone">Business phone</label>
+          <div class="col-md-10">
+            <input
+              type="tel"
+              id="busPhone"
+              name="busPhone"
+              placeholder="Business Phone"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="mobilePhone">Mobile phone</label>
+          <div class="col-md-10">
+            <input
+              type="tel"
+              id="mobilePhone"
+              name="mobilePhone"
+              placeholder="Mobile Phone"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="homeStreet">Address 1</label>
+          <div class="col-md-10">
+            <input
+              type="text"
+              id="homeStreet"
+              name="homeStreet"
+              placeholder="Home Street Address"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="homeCity">Address 2</label>
+          <div class="col-md-10">
+            <input
+              type="text"
+              id="homeCity"
+              name="homeCity"
+              placeholder="Home City/State/Zip"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="businessStreet">Address 1</label>
+          <div class="col-md-10">
+            <input
+              type="text"
+              id="businessStreet"
+              name="businessStreet"
+              placeholder="Business Street Address"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="businessCity">Address 2</label>
+          <div class="col-md-10">
+            <input
+              type="text"
+              id="businessCity"
+              name="businessCity"
+              placeholder="Business City/State/Zip"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+
     <footer class="site-footer">
       <div class="container">
         <div class="row">
           <div class="col-4 col-sm-2 offset-1">
             <h5>Links</h5>
             <ul class="list-unstyled">
-              <li><a href="#">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="aboutus.html">About</a></li>
               <li><a href="#">Sites</a></li>
               <li><a href="contactus.html">Contact</a></li>
