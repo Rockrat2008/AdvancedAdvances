@@ -9,6 +9,10 @@ h2 {
   text-align: center;
 }
 
+legend {
+  font-weight: bold;
+}
+
 .jumbotron {
   background-color: #d36582;
 }

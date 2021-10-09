@@ -48,7 +48,7 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="principal.html">Principal</a>
+              <a class="nav-link" href="principal.html">Principals</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#">Advances</a>
@@ -62,70 +62,173 @@
     </nav>
 
     <div class="container">
-      <h3>Add an advance</h3>
+      <h3>ADD AN ADVANCE</h3>
       <form>
-        <div class="form-group row">
-          <label class="col-md-3" for="advanceName">Location</label>
-          <div class="col-md-9">
-            <input
-              type="text"
-              id="advanceName"
-              name="advanceName"
-              placeholder="Advance Location"
-            />
+        <fieldset>
+          <legend>Starting and destination addresses</legend>
+          <div class="form-group row">
+            <label class="col-md-3" for="advanceName">Starting Location</label>
+            <div class="col-md-3">
+              <input
+                type="text"
+                id="advanceName"
+                name="advanceName"
+                placeholder="Advance Location"
+              />
+            </div>
           </div>
-        </div>
-        <div class="form-group row">
-          <label class="col-md-3" for="startingStreet">Address 1</label>
-          <div class="col-md-9">
-            <input
-              type="text"
-              id="startingStreet"
-              name="startingStreet"
-              placeholder="Starting Street Address"
-            />
+          <div class="form-group row">
+            <label class="col-md-3" for="startingStreet"
+              >Starting Address
+            </label>
+            <div class="col-md-3">
+              <input
+                type="text"
+                id="startingStreet"
+                name="startingStreet"
+                placeholder="Starting Street Address"
+              />
+            </div>
+            <label class="col-md-3" for="startingCity">Starting Address</label>
+            <div class="col-md-3">
+              <input
+                type="text"
+                id="startingCity"
+                name="startingCity"
+                placeholder="Starting City/State/Zip"
+              />
+            </div>
           </div>
-        </div>
-        <div class="form-group row">
-          <label
-            class="col-md-3"
-            for="startingCity
-          "
-            >Address 2</label
-          >
-          <div class="col-md-9">
-            <input
-              type="text"
-              id="startingCity
-              "
-              name="startingCity
-              "
-              placeholder="Starting City/State/Zip"
-            />
+          <div class="form-group row">
+            <label class="col-md-3" for="destinationStreet"
+              >Destination Address</label
+            >
+            <div class="col-md-3">
+              <input
+                type="text"
+                id="destinationStreet"
+                name="destinationStreet"
+                placeholder="Destination Street Address"
+              />
+            </div>
+            <label class="col-md-3" for="destinationCity"
+              >Destination Address</label
+            >
+            <div class="col-md-3">
+              <input
+                type="text"
+                id="destinationCity"
+                name="destinationCity"
+                placeholder="Destination City/State/Zip"
+              />
+            </div>
           </div>
-        </div>
-        <div class="form-group row">
-          <label class="col-md-3" for="destinationStreet">Address 1</label>
-          <div class="col-md-9">
-            <input
-              type="text"
-              id="destinationStreet"
-              name="destinationStreet"
-              placeholder="Destination Street Address"
-            />
+          <div class="form-group row">
+            <label class="col-md-3" for="distance">Distance</label>
+            <div class="col-md-3">
+              <input
+                type="number"
+                id="distance"
+                name="distance"
+                placeholder="Distance in miles"
+              />
+            </div>
+            <label class="col-md-3" for="travelTime">Travel Time</label>
+            <div class="col-md-3">
+              <input
+                type="text"
+                id="travelTime"
+                name="travelTime"
+                placeholder="Estimated Travel Time"
+              />
+            </div>
           </div>
-        </div>
-        <div class="form-group row">
-          <label class="col-md-3" for="destinationCity">Address 2</label>
-          <div class="col-md-9">
-            <input
-              type="text"
-              id="destinationCity"
-              name="destinationCity"
-              placeholder="Destination City/State/Zip"
-            />
+        </fieldset>
+        <fieldset>
+          <legend>Routes</legend>
+          <div class="form-group row">
+            <label class="col-md-3" for="primaryRoute">Primary Route</label>
+            <div class="col-md-3">
+              <input
+                type="text"
+                id="primaryRoute"
+                name="primaryRoute"
+                placeholder="Primary Route"
+              />
+            </div>
           </div>
-        </div>
+        </fieldset>
+        <fieldset>
+          <legend>Safe Havens</legend>
+          <div class="form-group row">
+            <label class="col-md-3" for="hospitalName">Hospital Name</label>
+            <div class="col-md-3">
+              <input
+                type="text"
+                id="hospitalName"
+                name="hospitalName"
+                placeholder="Hospital Name"
+              />
+            </div>
+            <label class="col-md-3" for="responseTime"
+              >Average Response Time</label
+            >
+            <div class="col-md-3">
+              <input
+                type="text"
+                id="responseTime"
+                name="responseTime"
+                placeholder="Average Response Time"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-md-3" for="policeDeptName"
+              >Police Department</label
+            >
+            <div class="col-md-3">
+              <input
+                type="text"
+                id="policeDeptName"
+                name="policeDeptName"
+                placeholder="Police Department"
+              />
+            </div>
+            <label class="col-md-3" for="pdResponseTime"
+              >Average Response Time</label
+            >
+            <div class="col-md-3">
+              <input
+                type="text"
+                id="pdResponseTime"
+                name="pdResponseTime"
+                placeholder="Average Response Time"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-md-3" for="fireDeptName">Fire Department</label>
+            <div class="col-md-3">
+              <input
+                type="text"
+                name="fireDeptName"
+                id="fireDeptName"
+                placeholder="Fire Department"
+              />
+            </div>
+            <label class="col-md-3" for="fdResponseTime"
+              >Average Response Time</label
+            >
+            <div class="col-md-3">
+              <input
+                type="text"
+                id="fdResponseTime"
+                name="fdResponseTime"
+                placeholder="Average Response Time"
+              />
+            </div>
+          </div>
+        </fieldset>
       </form>
     </div>
 
