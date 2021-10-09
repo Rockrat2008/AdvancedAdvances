@@ -1,5 +1,5 @@
 body {
-  color: #d3ab9e;
+  color: #ffeecf;
   background-color: #1d3557;
 }
 
@@ -7,4 +7,13 @@ h1,
 h2 {
   font-family: "Noto Serif", "Open Sans";
   text-align: center;
+}
+
+.jumbotron {
+  background-color: #d36582;
+}
+
+.site-footer {
+  margin: 10px;
+  padding: 10px;
 }
