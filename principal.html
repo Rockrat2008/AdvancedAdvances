@@ -76,7 +76,19 @@
 
     <div class="container">
       <h3>ADD A PRINCIPAL</h3>
-      <form>
+      <form method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Principal Characteristics</legend>
+          <div class="form-group row">
+            <label for="image">Image</label>
+            <div class="col-md-3">
+              <input type="file" id="image" name="image" />
+            </div>
+          </div>
+          <p>
+            <img id="preview" width="300" />
+          </p>
+        </fieldset>
         <fieldset>
           <legend>Basic Principal Information</legend>
           <div class="form-group row">
