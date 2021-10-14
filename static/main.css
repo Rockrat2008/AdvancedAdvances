@@ -21,6 +21,19 @@ legend {
 
 .jumbotron {
   background-color: #d36582;
+  margin: 0;
+  padding: 0px;
+}
+
+.navbar {
+  background-color: #2b59c3;
+  margin: 0px;
+  padding: 0px;
+}
+
+.modal-title,
+.form-check {
+  color: #d36582;
 }
 
 .site-footer {
