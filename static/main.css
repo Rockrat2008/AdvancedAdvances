@@ -13,6 +13,12 @@ legend {
   font-weight: bold;
 }
 
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
 .jumbotron {
   background-color: #d36582;
 }
