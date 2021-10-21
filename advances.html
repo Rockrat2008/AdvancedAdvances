@@ -78,7 +78,7 @@
                 placeholder="Search for Advance"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success my-2 ml-1" type="submit">
+              <button class="btn btn-outline-warning my-2 ml-1" type="submit">
                 Search
               </button>
             </form>
@@ -87,11 +87,30 @@
       </div>
     </nav>
 
-    <div class="container">
-      <h3>ADD AN ADVANCE</h3>
-      <form>
-        <fieldset>
-          <legend>Starting and destination addresses</legend>
+        <!-- TAB PANELS -->
+        <div class="container">
+          <h2>Add An Advance</h2>
+          <p>Select the tabs to add data to each section for your advance.</p>
+    
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a data-toggle="tab" href="#home">Starting and Destination Addresses</a>
+            </li>
+            <li>|</li>
+            <li>
+              <a data-toggle="tab" href="#menu1">Routes</a>
+            </li>
+            <li>|</li>
+            <li><a data-toggle="tab" href="#menu2">Route Details</a></li>
+            <li>|</li>
+            <li>
+              <a data-toggle="tab" href="#menu3">Safe Havens</a>
+            </li>
+          </ul>
+
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+        <form method="post" enctype="multipart/form-data">
           <div class="form-group row">
             <label class="col-md-3" for="startingName">Starting Location</label>
             <div class="col-md-3">
@@ -182,9 +201,10 @@
               />
             </div>
           </div>
-        </fieldset>
-        <fieldset>
-          <legend>Routes</legend>
+        </form>
+      </div>
+      <div id="menu1" class="tab-pane fade">
+        <form>
           <div class="form-group row">
             <label class="col-md-3" for="primaryRoute">Primary Route</label>
             <div class="col-md-3">
@@ -218,9 +238,10 @@
               />
             </div>
           </div>
-        </fieldset>
-        <fieldset>
-          <legend>Route Details</legend>
+        </form>
+      </div>
+      <div id="menu2" class="tab-pane fade">
+        <form>
           <div class="form-group row">
             <label class="col-md-3" for="specialEvents"
               >Special Events In Area?</label
@@ -247,80 +268,80 @@
               ></textarea>
             </div>
           </div>
-        </fieldset>
-        <fieldset>
-          <legend>Safe Havens</legend>
-          <div class="form-group row">
-            <label class="col-md-2" for="hospitalName">Hospital Name</label>
-            <div class="col-md-4">
-              <input
-                type="text"
-                id="hospitalName"
-                name="hospitalName"
-                placeholder="Hospital Name"
-              />
-            </div>
-            <label class="col-md-3" for="responseTime"
-              >Average Response Time</label
-            >
-            <div class="col-md-3">
-              <input
-                type="text"
-                id="responseTime"
-                name="responseTime"
-                placeholder="Average Response Time"
-              />
-            </div>
+        </form>
+      </div>
+      <div id="menu3" class="tab-pane fade">
+        <div class="form-group row">
+          <label class="col-md-2" for="hospitalName">Hospital Name</label>
+          <div class="col-md-4">
+            <input
+              type="text"
+              id="hospitalName"
+              name="hospitalName"
+              placeholder="Hospital Name"
+            />
           </div>
-          <div class="form-group row">
-            <label class="col-md-2" for="policeDeptName"
-              >Police Department</label
-            >
-            <div class="col-md-4">
-              <input
-                type="text"
-                id="policeDeptName"
-                name="policeDeptName"
-                placeholder="Police Department"
-              />
-            </div>
-            <label class="col-md-3" for="pdResponseTime"
-              >Average Response Time</label
-            >
-            <div class="col-md-3">
-              <input
-                type="text"
-                id="pdResponseTime"
-                name="pdResponseTime"
-                placeholder="Average Response Time"
-              />
-            </div>
+          <label class="col-md-3" for="responseTime"
+            >Average Response Time</label
+          >
+          <div class="col-md-3">
+            <input
+              type="text"
+              id="responseTime"
+              name="responseTime"
+              placeholder="Average Response Time"
+            />
           </div>
-          <div class="form-group row">
-            <label class="col-md-2" for="fireDeptName">Fire Department</label>
-            <div class="col-md-4">
-              <input
-                type="text"
-                name="fireDeptName"
-                id="fireDeptName"
-                placeholder="Fire Department"
-              />
-            </div>
-            <label class="col-md-3" for="fdResponseTime"
-              >Average Response Time</label
-            >
-            <div class="col-md-3">
-              <input
-                type="text"
-                id="fdResponseTime"
-                name="fdResponseTime"
-                placeholder="Average Response Time"
-              />
-            </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-md-2" for="policeDeptName"
+            >Police Department</label
+          >
+          <div class="col-md-4">
+            <input
+              type="text"
+              id="policeDeptName"
+              name="policeDeptName"
+              placeholder="Police Department"
+            />
           </div>
-        </fieldset>
-      </form>
+          <label class="col-md-3" for="pdResponseTime"
+            >Average Response Time</label
+          >
+          <div class="col-md-3">
+            <input
+              type="text"
+              id="pdResponseTime"
+              name="pdResponseTime"
+              placeholder="Average Response Time"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-md-2" for="fireDeptName">Fire Department</label>
+          <div class="col-md-4">
+            <input
+              type="text"
+              name="fireDeptName"
+              id="fireDeptName"
+              placeholder="Fire Department"
+            />
+          </div>
+          <label class="col-md-3" for="fdResponseTime"
+            >Average Response Time</label
+          >
+          <div class="col-md-3">
+            <input
+              type="text"
+              id="fdResponseTime"
+              name="fdResponseTime"
+              placeholder="Average Response Time"
+            />
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
     <footer class="site-footer">
       <div class="container">
